@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cơm Tấm Sài Gòn Xưa - Đến Với Cố Đô Huế</title>
+    <meta name="description" content="Ngọt béo miền Nam trong lòng cố đô thơ mộng.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            Sài Gòn Xưa
+        </div>
+        <nav class="nav-links" id="nav-links">
+            <a href="#hero">Trang chủ</a>
+            <a href="#menu">Thực đơn</a>
+            <a href="#booking">Đặt bàn / Giao hàng</a>
+        </nav>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Cơm Tấm Sài Gòn Xưa <br><span class="highlight">Đến Với Cố Đô Huế</span></h1>
+                <p class="slogan">Ngọt béo miền Nam trong lòng cố đô thơ mộng.</p>
+                <a href="#menu" class="btn btn-primary shadow-pulse">Khám phá thực đơn</a>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2 class="section-title">Tinh Hoa Ẩm Thực</h2>
+                <p class="section-subtitle">Sự kết hợp hoàn hảo giữa đĩa cơm tấm đậm đà Nam Bộ với hương vị tinh tế, cay nồng xứ Huế</p>
+                
+                <div class="menu-grid" id="menu-grid">
+                    <!-- Cards are injected by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking-section">
+            <div class="container">
+                <div class="booking-wrapper">
+                    <div class="booking-info">
+                        <h2>Gửi gắm hương vị</h2>
+                        <p>Dù thưởng thức không gian tại quán hay yêu cầu giao hàng tận nơi, chúng tôi luôn chăm chút cho từng đĩa cơm tươm tất nhất.</p>
+                    </div>
+                    <form id="booking-form" class="booking-form">
+                        <div class="form-group">
+                            <label for="name">Tên của bạn</label>
+                            <input type="text" id="name" required placeholder="Nguyễn Văn A">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="tel" id="phone" required placeholder="090123xxxx">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="time">Giờ đến / Nhận hàng</label>
+                                <input type="time" id="time" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dish">Món yêu thích nhất</label>
+                                <select id="dish" required>
+                                    <option value="" disabled selected>Chọn một món...</option>
+                                    <option value="SuonNuong">Cơm tấm sườn nướng (45k)</option>
+                                    <option value="DacBiet">Cơm tấm đặc biệt (75k)</option>
+                                    <option value="BanhBeo">Bánh bèo Huế (40k)</option>
+                                    <option value="NemLui">Nem lụi (50k)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="note">Ghi chú (Tùy chọn)</label>
+                            <textarea id="note" rows="3" placeholder="Ghi chú: Thêm xoài chua, cay nhiều..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Xác Nhận Đặt</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Sài Gòn Xưa</h3>
+                <p>Nơi quyện hòa văn hóa ẩm thực hai miền độc đáo.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Thông Tin</h3>
+                <ul>
+                    <li>📍 89 Lê Lợi, TP. Huế</li>
+                    <li>📞 090 123 4567</li>
+                    <li>🕒 Mở cửa: 06:00 - 21:00 (Mỗi ngày)</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Kết nối với chúng tôi</h3>
+                <div class="social-links">
+                    <a href="javascript:void(0);">Facebook</a>
+                    <a href="javascript:void(0);">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="designer-credit">Thiết kế bởi Minh Đỗ</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
