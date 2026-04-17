@@ -20,4 +20,4 @@ Dự án này sử dụng hoàn toàn **HTML, CSS, JavaScript thuần** (Vanilla
 - **Thiết kế cực kỳ bắt mắt**: Bố cục Glassmorphism hiện đại, hình ảnh AI sắc nét (Đĩa cơm tấm trên nền sông Hương lãng mạn).
 - **Form đặt bàn**: Validations cơ bản và alert thông báo.
 
-Thiết kế bởi Minh Đỗ.
+
